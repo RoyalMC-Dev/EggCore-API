@@ -1,0 +1,27 @@
+name: EggCore
+version: '0.1'
+main: me.sussydeveloper.Main
+api-version: '1.13'
+authors: [MaciekTM]
+description: Simple System Command
+softdepend: [PlaceholderAPI]
+commands:
+  eggcore:
+    description: Help Command
+    permission: eggcore.help
+    permission-message: '§c§lNie masz permisji do tej komendy!'
+  tutorial:
+    description: Tutorial command
+    permission: eggcore.tutorial
+    permission-message: '§c§lNie masz permisji do tej komendy!'
+  tytul:
+    description: Tytuł command
+    permission: eggcore.tytul
+    permission-message: '§c§lNie masz permisji do tej komendy!'
+  portfel:
+    description: Potfel
+    aliases:
+      - wallet
+  przelej:
+    aliases:
+      - pay

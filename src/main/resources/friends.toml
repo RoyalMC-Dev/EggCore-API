@@ -1,0 +1,107 @@
+#FriendSystem
+friend-help-message = """<#4455FF><st>                                                                                </st>
+
+<#FFEE44>To co poświetlone kolorem <#FF44B2>magenta</#FF44B2> to argument wymagany
+A poświetlone na <#8AFF00>jasnozielono</#8AFF00> kolorem to argumenty
+nie wymagane
+
+/znajomi <<#8AFF00>help</#8AFF00>/<#FF44B2>gracz</#FF44B2>> - lista argumentów lub wysyłanie zaproszenia do znajomych
+/znajomi <#8AFF00>add</#8AFF00> <<#FF44B2>gracz</#FF44B2>> - wysyłanie zaproszenia do znajomych
+/znajomi remove <<#FF44B2>gracz</#FF44B2>> - usuwanie znajomego z listy znajomych
+/znajomi list - lista aktywny i nieaktywnych znajomych
+</#FFEE44>
+<st>                                                                                </st>"""
+
+friend-send-request = """<#4455FF><st>                                                                                </st>
+<#FFEE44>
+Wyslano zaproszenie do znajomych do <#FF44B2>%player%</#FF44B2>.
+Ma teraz <#FF44B2>3</#FF44B2> minut na zaakceptowanie twojego zaproszenia,
+abyscie zostali znajonymi na serwerze.
+</#FFEE44>
+<st>                                                                                </st>"""
+
+friend-receive-request = """<#4455FF><st>                                                                                </st>
+<#FFEE44>
+Otrzymałeś zaproszenie od %player%.
+Masz teraz <#FF44B2>3</#FF44B2> minut na zaakceptowanie jego zaproszenia,
+abyście zostali znajonymi na serwerze.
+</#FFEE44>
+        <accept>%accept%</accept>        <deny>%deny%</deny>        <ignore>%ignore%</ignore>
+<st>                                                                                </st>"""
+
+friend-sender-accept = """<#4455FF><st>                                                                                </st>
+<#FFEE44>
+Zaakceptowano <#FF44B2>%player%</#FF44B2>.
+Od teraz jesteście znajonymi na serwerze.
+</#FFEE44>
+<st>                                                                                </st>"""
+
+friend-target-accept = """<#4455FF><st>                                                                                </st>
+<#FFEE44>
+Gracz <#FF44B2>%player%</#FF44B2> zaakceptował twoje zaproszenie do znajomych.
+Od teraz jesteście znajonymi na serwerze.
+</#FFEE44>
+<st>                                                                                </st>"""
+
+friend-sender-deny = """<#4455FF><st>                                                                                </st>
+<#FFEE44>
+Odrzucono zaproszenie od <#FF44B2>%player%</#FF44B2>.
+</#FFEE44>
+<st>                                                                                </st>"""
+
+friend-target-deny = """<#4455FF><st>                                                                                </st>
+<#FFEE44>
+Gracz <#FF44B2>%player%</#FF44B2> odrzucił twoje zaproszenie do znajomych.
+</#FFEE44>
+<st>                                                                                </st>"""
+
+friend-remove = """<#4455FF><st>                                                                                </st>
+<#FFEE44>
+Usunąłeś znajomego o nicku <#FF44B2>%player%</#FF44B2>.
+Od teraz nie jesteście znajonymi
+</#FFEE44>
+<st>                                                                                </st>"""
+
+friend-block = """<#4455FF><st>                                                                                </st>
+<#FFEE44>
+Zablokowałeś gracza o nicku <#FF44B2>%player%</#FF44B2>.
+Od teraz nie może wysyłać Ci zaproszeń do znajomych
+</#FFEE44>
+<st>                                                                               </st>"""
+
+friend-unblock = """<#4455FF><st>                                                                                </st>
+<#FFEE44>
+Odblokowałeś gracza o nicku <#FF44B2>%player%</#FF44B2>.
+Od teraz może wysyłać Ci zaproszenia do znajomych
+</#FFEE44>
+<st>                                                                                </st>"""
+
+friend-deny-outtime-sender = """<#4455FF><st>                                                                                </st>
+<#FFEE44>
+Twoje zaproszenie nie zostało zaakceptowane przez <#FF44B2>%player%</#FF44B2>.
+Ponieważ nie wykonał żadnej akcji w przeciągu 3 minut.
+</#FFEE44>
+<st>                                                                                </st>"""
+
+friend-deny-outtime-reciver = """<#4455FF><st>                                                                                </st>
+<#FFEE44>
+Nie wykonałeś żanych akcji zaproszenia od <#FF44B2>%player%</#FF44B2>.
+Dlatego zaproszenie zostało automatycznie odrzucone.
+</#FFEE44>
+<st>                                                                                </st>"""
+
+friend-list = """<#4455FF><st>                                                                                </st>
+<#FFEE44>
+Posiadasz aż <green>%count%</green> znajomych.
+O to twoja lista znajomych:
+%friends%
+</#FFEE44>
+<st>                                                                                </st>"""
+#settings
+friend-accept-time = 3 #minutes
+friend-accept-format = "<green><bold>[AKCEPTUJ]</bold></green>"
+friend-deny-format = "<red><bold>[ODRZUĆ]</bold></red>"
+friend-ignore-format = "<gray><bold>[ZABLOKUJ]</bold></gray>"
+
+#Message System (Friend Support)
+sender-and-reciver-msg-format = '<dark_purple>%sender% -> %target%:</dark_purple> <light_purple>%message%</light_purple>'

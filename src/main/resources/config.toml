@@ -1,0 +1,9 @@
+# Dokumentacja o formatowaniu -> https://docs.advntr.dev/minimessage/format.html
+wiadomosc-live = "<hover:show_text:'<red>%msg%'><yellow><click:open_url:%link%>Gracz <red>%player%</red> zaczal transmisje na zywo</yellow>\n<green>Najedz aby kliknac.</hover>"
+live-cooldown = 60 #SEKUNDY
+
+wiadomosc-ogloszenia = "\n<red><bold>Ogloszenie</bold></red> <gray>(%player%)</gray>\n<gold>%msg%</gold>\n"
+ogloszenia-cooldown = 600
+
+lobbies = ['lobby', 'bim']
+

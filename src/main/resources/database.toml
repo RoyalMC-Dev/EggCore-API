@@ -1,0 +1,7 @@
+# Database
+type = "mariadb"
+hostname = 'localhost'
+port = '3306'
+username = 'root'
+password = 'password'
+database = 'velocitycore'
